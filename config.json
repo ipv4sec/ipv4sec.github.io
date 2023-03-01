@@ -1,0 +1,28 @@
+{
+  "title": "YuYuai's Articles",
+  "theme": "elise",
+  "disableKinds": [
+    "taxonomy",
+    "term",
+    "sitemap",
+    "section",
+    "RSS",
+    "404"
+  ],
+  "uglyurls": true,
+  "permalinks": {
+    "/": "/:year:month-:filename"
+  },
+  "menu": {
+	  "theme": [
+		  {
+			  "name": "Github",
+			  "url": "https://github.com/ipv4sec"
+		  },
+		  {
+			  "name": "Email",
+			  "url": "mailto:ipv4sec[AT]gmail[DOT]com"
+		  }
+	  ]
+  }
+}

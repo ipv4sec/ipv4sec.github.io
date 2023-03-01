@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<link rel="shortcut icon" href="assets/favicon.png">
+	<link href="assets/elise.css" rel="stylesheet">
+
+	<title>{{.Title}} - {{.Site.Title}}</title>
+	<meta name="description" content="{{.Title}}" />
+</head>
+
+<body>
+<header class="site-header">
+	<div class="wrapper">
+		<a class="site-title" href="/">{{.Site.Title}}</a>
+		<nav class="site-nav">
+			{{ range .Site.Menus.theme }}
+			<a target="_blank" class="page-link" href="{{ .URL }}">{{ .Name }}</a>
+			{{ end }}
+		</nav>
+	</div>
+</header>
+
+
+<main class="page-content" aria-label="Content">
+	<div class="wrapper">
+		<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+			<header class="post-header">
+				<h1 class="post-title" itemprop="name headline">{{.Title}}</h1>
+				<p class="post-meta"><time datetime="{{.Date}}" itemprop="datePublished">{{.Date.Format "January 2, 2006" }}</time></p>
+			</header>
+			<div class="post-content" itemprop="articleBody">
+				{{.Content}}
+			</div>
+		</article>
+	</div>
+</main>
+
+<footer class="site-footer">
+	<div class="wrapper">
+		<p>
+			Copyright <a target="_blank" href="https://github.com/ipv4sec">ipv4sec</a> Powered by <a target="_blank" href="https://gohugo.io">hugo</a> and <a target="_blank"
+				href="https://github.com/yous/whiteglass">whiteglass</a>
+		</p>
+	</div>
+</footer>
+</body>
+</html>
