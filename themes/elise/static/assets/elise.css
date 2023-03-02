@@ -1,3 +1,5 @@
+/* elise, forked from https://github.com/yous/whiteglass */
+
 /* bitter-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -6,15 +8,6 @@
   font-weight: 400;
   src: url('bitter-v32-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
        url('bitter-v32-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* bitter-500 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Bitter';
-  font-style: normal;
-  font-weight: 500;
-  src: url('bitter-v32-latin-500.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-       url('bitter-v32-latin-500.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 .pagination:after, .wrapper:after { content: ""; display: table; clear: both; }
@@ -30,8 +23,6 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { mar
 ul, ol { margin-left: 30px; }
 
 li > ul, li > ol { margin-bottom: 0; }
-
-h1, h2, h3, h4, h5, h6 { font-weight: 400; }
 
 h1 code, h2 code, h3 code, h4 code, h5 code, h6 code { font-size: inherit; }
 
@@ -56,7 +47,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 .site-header { min-height: 56px; position: relative; }
 
-.site-title { font-size: 25px; font-weight: 300; line-height: 56px; letter-spacing: -1px; margin-bottom: 0; float: left; }
+.site-title { font-size: 25px; line-height: 56px; letter-spacing: -1px; margin-bottom: 0; float: left; }
 
 .site-title, .site-title:visited { color: #000; }
 
