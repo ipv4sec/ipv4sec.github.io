@@ -1,6 +1,6 @@
 ---
 title: "Example Article"
-date: 2019-12-05T09:53:40+08:00
+date: 2023-03-10T08:00:00+08:00
 draft: false
 ---
 
@@ -26,13 +26,20 @@ protected void onCreate(Bundle savedInstanceState) {
 }
 ```
 
-**加粗文本** 或者 __加粗文本__
+**加粗文本** 
 
-*斜体文本*  或者_斜体文本_
+*斜体文本* 
 
 ~~删除文本~~
 
-这是行内式链接：[ConnorLin's Blog](http://connorlin.github.io)
+这是行内式链接：[YuYuai's Articles](https://opensource.moejs.com/)
+
 这是行内代码`onCreate(Bundle savedInstanceState)`的例子。
 
 这是一行后面加两个空格  换行
+
+以下是图片的显示效果
+
+![](example.jpg)
+
+以上就是全部的显示效果了,以上就是全部的显示效果了,以上就是全部的显示效果了.
