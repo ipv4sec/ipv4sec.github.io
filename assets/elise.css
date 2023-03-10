@@ -75,7 +75,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 .post-archives { margin-left: 0; list-style: none; }
 
-.post-archives .post-link { font-size: 24px; }
+.post-archives .post-link { font-size: 24px; font-weight: normal;}
 
 .post-archives > li { margin-bottom: 30px; }
 
@@ -93,24 +93,32 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 .post-header { margin-bottom: 30px; }
 
-.post-title { font-size: 42px; letter-spacing: -1px; line-height: 1; }
+.post-title { font-size: 42px; letter-spacing: -1px; line-height: 1; font-weight: normal;}
 
 @media screen and (max-width: 1000px) { .post-title { font-size: 36px; } }
 
 .post-content { margin-bottom: 30px; }
 
-.post-content h1 { font-size: 38px; }
+.post-content h1 { font-size: 36px; }
 
 @media screen and (max-width: 1000px) { .post-content h1 { font-size: 34px; } }
 
 .post-content h2 { font-size: 32px; }
 
-@media screen and (max-width: 1000px) { .post-content h2 { font-size: 28px; } }
+@media screen and (max-width: 1000px) { .post-content h2 { font-size: 30px; } }
 
-.post-content h3 { font-size: 26px; }
+.post-content h3 { font-size: 28px; }
 
-@media screen and (max-width: 1000px) { .post-content h3 { font-size: 22px; } }
+@media screen and (max-width: 1000px) { .post-content h3 { font-size: 26px; } }
 
-.post-content h4 { font-size: 20px; }
+.post-content h4 { font-size: 24px; }
 
-@media screen and (max-width: 1000px) { .post-content h4 { font-size: 18px; } }
+@media screen and (max-width: 1000px) { .post-content h4 { font-size: 22px; } }
+
+.post-content h5 { font-size: 20px; }
+
+@media screen and (max-width: 1000px) { .post-content h5 { font-size: 18px; } }
+
+.post-content h6 { font-size: 16px; }
+
+@media screen and (max-width: 1000px) { .post-content h6 { font-size: 14px; } }
