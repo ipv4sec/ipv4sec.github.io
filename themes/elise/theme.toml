@@ -1,5 +1,5 @@
 
 name = "elise"
-description = "elise, forked from https://github.com/yous/whiteglass"
+description = "elise, a simple hugo theme. forked from https://github.com/yous/whiteglass"
 
 min_version = "0.41.0"

@@ -11,7 +11,7 @@
   ],
   "uglyurls": true,
   "permalinks": {
-    "/": "/:year:month-:filename"
+    "/": "/:filename"
   },
   "menu": {
 	  "elise": [

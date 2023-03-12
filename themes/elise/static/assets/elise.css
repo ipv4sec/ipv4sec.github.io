@@ -122,3 +122,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 .post-content h6 { font-size: 16px; }
 
 @media screen and (max-width: 1000px) { .post-content h6 { font-size: 14px; } }
+
+img {width: 400px;}
+@media screen and (max-width: 1000px) { img{ width: 340px;} }
+

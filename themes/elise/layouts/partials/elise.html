@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="preload" href="assets/bitter-v32-latin-regular.woff" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/bitter-v32-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="shortcut icon" href="assets/favicon.png">
+    <link href="assets/elise.css" rel="stylesheet">
+
+    <title>{{ .Site.Title }} {{ if .IsPage }} - {{.Title}} {{end}}</title>
+    <meta name="description" content="{{ .Site.Title }}" />
+</head>
+
+<body>
+<header class="site-header">
+    <div class="wrapper">
+        <div>
+            <a class="site-title" href="/">{{.Site.Title}}</a>
+        </div>
+        <nav class="site-nav">
+            {{ range .Site.Menus.elise }}
+            <a target="_blank" class="page-link" href="{{ .URL }}">{{ .Name }}</a>
+            {{ end }}
+        </nav>
+    </div>
+</header>
+
+<main aria-label="Content" class="page-content">
+    <div class="wrapper">
+        <div class="home">
+            {{ if .IsHome }}
+            <ul class="post-archives">
+                    {{  range .Pages }}
+                    <li>
+                        <span class="post-meta">{{.Date.Format "January 2, 2006" }}</span>
+                        <h2>
+                            <a target="_blank" class="post-link" href="{{.Permalink}}">{{.Title}}</a>
+                        </h2>
+                    </li>
+                    {{  end  }}
+            </ul>
+            {{end}}
+            {{ if .IsPage }}
+            <div class="post-archives">
+                <span class="post-meta">{{.Date.Format "January 2, 2006" }}</span>
+                <h2>
+                    <a target="_blank" class="post-link" href="{{.Permalink}}">{{.Title}}</a>
+                </h2>
+                <div class="post-content" itemprop="articleBody">
+                    {{.Content}}
+                </div>
+            </div>
+            {{end}}
+        </div>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="wrapper">
+        <p>
+            Copyright YuYuai. Powered by <a target="_blank" href="https://gohugo.io">hugo</a> and <a target="_blank" href="https://github.com/ipv4sec/#elise">elise</a>. Licensed under CC BY 4.0
+        </p>
+    </div>
+</footer>
+</body>
+</html>

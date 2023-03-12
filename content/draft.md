@@ -1,7 +1,7 @@
 ---
-title: "Example Article"
+title: "draft"
 date: 2023-03-10T08:00:00+08:00
-draft: false
+draft: true
 ---
 
 # 一级标题
@@ -20,7 +20,7 @@ draft: false
 3. Blue
 
 ```
-protected void onCreate(Bundle savedInstanceState) {
+protected void onCreate(Bundle savedInstanceState,Bundle savedInstanceState,Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
 }
@@ -40,6 +40,6 @@ protected void onCreate(Bundle savedInstanceState) {
 
 以下是图片的显示效果
 
-![](example.jpg)
+![](assets/favicon.png)
 
 以上就是全部的显示效果了,以上就是全部的显示效果了,以上就是全部的显示效果了.
