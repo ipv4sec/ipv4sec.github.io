@@ -1,5 +1,5 @@
 ---
-title: "有效的面试"
+title: "Effective Interview"
 date: 2023-03-10T08:00:00+08:00
 draft: true
 ---
