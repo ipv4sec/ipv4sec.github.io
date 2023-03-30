@@ -4,50 +4,39 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>TODO</title>
+    <title>{{ .Site.Title }} {{ if .IsPage }} - {{.Title}} {{end}}</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.png">
     <meta name="description" content="TODO">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preload" href="assets/quicksand-v30-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/bitter-v32-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="assets/ahri.css">
 </head>
 
 <body>
-<header class="page-header">
-    <div class="page-header-text"> YuYuai's Articles </div>
-</header>
+<a href="#">
+    <header class="page-header">
+        <div class="page-header-text"> Azir's Articles - Theme based on ahri. </div>
+    </header>
+</a>
+
 
 
 
 {{ if .IsHome }}
-<section class="page js-page">
-    <section class="all-articles-navigation-panel js-all-articles-navigation-panel">
-        <h1>All articles:</h1>
+<section class="page">
+    <section class="articles">
+        <h1>所有文章:</h1>
         <nav>
-            <ul class="list-of-pages">
+            <ol class="list-of-pages">
                 {{  range .Pages }}
-<!--                <li>-->
-<!--                    <span class="post-meta">{{.Date.Format "January 2, 2006" }}</span>-->
-<!--                    <h2>-->
-<!--                        <a target="_blank" class="post-link" href="{{.Permalink}}">{{.Title}}</a>-->
-<!--                    </h2>-->
-<!--                </li>-->
-                <li><a href="{{.Permalink}}">{{.Title}} DRAFT draft .NET 5.0预览版6简介</a></li>
+                <li><a href="{{.Permalink}}">[{{.Date.Format "2006 January" }}] {{.Title}}</a></li>
                 {{  end  }}
-
-        </ul>
+            </ol>
         </nav>
     </section>
 </section>
 {{end}}
-
-<footer class="site-footer">
-    <div class="wrapper">
-        <p>
-            Copyright @ YuYuai. Powered by <a target="_blank" href="https://gohugo.io">hugo</a> and <a target="_blank" href="https://github.com/ipv4sec/#ahri">ahri</a>. Licensed under CC BY 4.0
-        </p>
-    </div>
-</footer>
-
 </body>
 
 </html>
