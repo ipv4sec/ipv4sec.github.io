@@ -272,31 +272,6 @@ a[href*=http]:not(.tools-bar a) {
     text-align: center
 }
 
-.page-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: #3a3a3a;
-    color: #fdfd92
-}
-
-.page-footer-element {
-    margin: 0 10px
-}
-
-.page-footer-legal-info-container {
-    font-size: 2rem
-}
-
-.page-footer-counter-clustrmap {
-    cursor: default
-}
-
-.page-footer-counter-clustrmap img {
-    clip-path: inset(0 22px)
-}
-
 .ad-block-container-image-wrapper {
     border: thin solid silver;
     display: flex;
