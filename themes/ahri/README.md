@@ -1,6 +1,14 @@
+
+# elise
+
+elise, a simple hugo theme. forked from [https://github.com/yous/whiteglass](https://github.com/yous/whiteglass)
+
+## Configuration
+
+```json
 {
   "title": "YuYuai's Articles",
-  "theme": "ahri",
+  "theme": "elise",
   "disableKinds": [
     "taxonomy",
     "term",
@@ -26,3 +34,7 @@
 	  ]
   }
 }
+```
+
+## Copyright
+Licensed under the MIT license. Check the LICENSE file for details.

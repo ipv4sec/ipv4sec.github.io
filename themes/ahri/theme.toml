@@ -1,0 +1,5 @@
+
+name = "elise"
+description = "elise, a simple hugo theme. forked from https://github.com/yous/whiteglass"
+
+min_version = "0.41.0"
