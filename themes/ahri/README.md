@@ -1,14 +1,14 @@
 
-# elise
+# ahri
 
-elise, a simple hugo theme. forked from [https://github.com/yous/whiteglass](https://github.com/yous/whiteglass)
+ahri. copied from [https://tech-zh.netlify.app](https://tech-zh.netlify.app)
 
 ## Configuration
 
 ```json
 {
   "title": "YuYuai's Articles",
-  "theme": "elise",
+  "theme": "ahri",
   "disableKinds": [
     "taxonomy",
     "term",
