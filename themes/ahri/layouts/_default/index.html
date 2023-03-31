@@ -30,7 +30,7 @@
         <nav>
             <ol class="list-of-pages">
                 {{  range .Pages }}
-                <li><a href="{{.Permalink}}">[{{.Date.Format "2006 January" }}] {{.Title}}</a></li>
+                <li><a href="{{.Permalink}}">[{{.Date.Format "2006/01/02" }}] {{.Title}}</a></li>
                 {{  end  }}
             </ol>
         </nav>

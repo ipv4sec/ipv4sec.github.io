@@ -1,5 +1,5 @@
 ---
-title: "本站博客主题-ahri"
+title: "本站博客主题-阿璃"
 date: 2023-03-10T08:00:00+08:00
 draft: false
 ---
@@ -24,7 +24,7 @@ draft: false
 | 单元格 | 单元格 |
 | 单元格 | 单元格 |
 
-```go
+```
 func Init(dsn string) (err error) {
 	db, err := gorm.Open(mysql.New(mysql.Config{
 		DSN: fmt.Sprintf("gorm:gorm@tcp(localhost:3306)/example??charset=utf8mb4&parseTime=True&loc=%s", "Asia%2FShanghai"),

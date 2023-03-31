@@ -13,14 +13,23 @@
   font-family: 'Bitter';
   font-style: normal;
   font-weight: 400;
-  src: url('bitter-v32-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-       url('bitter-v32-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url('bitter-v32-latin-regular.woff2') format('woff2'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-blockquote p {
-    border-left: 3px solid #ffeb3b;
-    background-color: #ffc;
-    padding: 1rem;
+html {
+    font-family: Quicksand, sans-serif;
+    overflow-y: scroll;
+}
+
+body {
+    margin: 0
+}
+
+hr {
+    border: 0;
+    padding: 3px;
+    width: 60%;
+    background: repeating-linear-gradient(135deg, #a2a9b6 0px, #a2a9b6 1px, transparent 1px, transparent 6px);
 }
 
 pre {
@@ -37,19 +46,32 @@ pre {
     margin-block-end: 1em;
     margin-inline-start: 40px;
     margin-inline-end: 40px;
+    font-family: Bitter, sans-serif;
+}
+
+blockquote p {
+    border-left: 3px solid #ffeb3b;
+    background-color: #ffc;
+    padding: 1rem;
+}
+
+code {
     font-family: Bitter,sans-serif;
 }
 
-html {
-    font-family: Quicksand,sans-serif;
-    overflow-y: scroll;
-}
-
-body {
-    margin: 0
+body > section > section > div > pre > code {
+    font-family: Bitter, sans-serif;
+    /*text-align: left;*/
+    direction: ltr;
+    width: fit-content;
 }
 
 body > section > section > nav > ol > li > a {
+    text-transform: uppercase;
+}
+
+body > section > section.content > div > div.footnotes > ol > li > p {
+    text-align: left;
     text-transform: uppercase;
 }
 
