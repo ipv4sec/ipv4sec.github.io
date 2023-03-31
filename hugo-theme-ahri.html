@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Azir&#39;s Articles  - 本站博客主题-ahri </title>
+    <title>Azir&#39;s Articles  - 本站博客主题-阿璃 </title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.png">
     <meta name="description" content="TODO">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -20,12 +20,10 @@
     </header>
 </a>
 
-
-
 <section class="page">
-    <h1>本站博客主题-ahri</h1>
+    <h1>本站博客主题-阿璃</h1>
     <section class="content">
-        <div class="post__text post__text-html post__text_v1">
+        <div>
             <h1 id="一级标题">一级标题</h1>
 <h2 id="二级标题">二级标题</h2>
 <h3 id="三级标题">三级标题</h3>
@@ -60,12 +58,12 @@
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">Init</span>(<span style="color:#a6e22e">dsn</span> <span style="color:#66d9ef">string</span>) (<span style="color:#a6e22e">err</span> <span style="color:#66d9ef">error</span>) {
-</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">db</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">gorm</span>.<span style="color:#a6e22e">Open</span>(<span style="color:#a6e22e">mysql</span>.<span style="color:#a6e22e">New</span>(<span style="color:#a6e22e">mysql</span>.<span style="color:#a6e22e">Config</span>{
-</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">DSN</span>: <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Sprintf</span>(<span style="color:#e6db74">&#34;gorm:gorm@tcp(localhost:3306)/example??charset=utf8mb4&amp;parseTime=True&amp;loc=%s&#34;</span>, <span style="color:#e6db74">&#34;Asia%2FShanghai&#34;</span>),
-</span></span><span style="display:flex;"><span>	}), <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">gorm</span>.<span style="color:#a6e22e">Config</span>{})
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><blockquote>
+<pre tabindex="0"><code>func Init(dsn string) (err error) {
+	db, err := gorm.Open(mysql.New(mysql.Config{
+		DSN: fmt.Sprintf(&#34;gorm:gorm@tcp(localhost:3306)/example??charset=utf8mb4&amp;parseTime=True&amp;loc=%s&#34;, &#34;Asia%2FShanghai&#34;),
+	}), &amp;gorm.Config{})
+}
+</code></pre><blockquote>
 <p>“We live in a networked world in which each company partners with a set of other companies.”</p>
 </blockquote>
 <p><strong>加粗文本</strong></p>
@@ -95,23 +93,6 @@
 
         </div>
     </section>
-
-    <section class="references">
-        <h4>References:</h4>
-        <nav>
-            <ol class="list-of-pages">
-                <li><a href="#">本站博客主题-ahri</a></li>
-                <li><a href="#">本书“自然语言处理的实际应用”</a></li>
-                <li><a href="#">泄漏抽象定律</a></li>
-                <li><a href="#">DevOps或我们如何失去工资和IT行业的未来，第二部分</a></li>
-                <li><a href="#">减少交互式可视化中的标签重叠</a></li>
-                <li><a href="#">没有DevOps的世界。那会是什么？</a></li>
-                <li><a href="#">模块化手机，笔记本电脑和手表-轰动一时的项目发生了什么？</a></li>
-                <li><a href="#">俄罗斯电子设备藏在哪里</a></li>
-            </ol>
-        </nav>
-    </section>
-
 </section>
 
 </body>
