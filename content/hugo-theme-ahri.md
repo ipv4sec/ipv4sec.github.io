@@ -46,15 +46,15 @@ func Init(dsn string) (err error) {
 
 这是一行后面加两个空格  换行
 
-使用 Markdown[^1]可以效率的书写文档, 直接转换成 HTML[^2], 你可以使用 Typora[^T] 编辑器进行书写。
-[^1]:Markdown是一种纯文本标记语言
-[^2]:HyperText Markup Language 超文本标记语言
-[^T]:NEW WAY TO READ & WRITE MARKDOWN.
+使用 Markdown[^T]可以效率的书写文档, 直接转换成 HTML[^T], 你可以使用 Typora[^T] 编辑器进行书写。
+[^T]:[Markdown是一种纯文本标记语言](https://www.baidu.com)
+[^T]:[HyperText Markup Language 超文本标记语言](https://www.baidu.com)
+[^T]:[NEW WAY TO READ & WRITE MARKDOWN.](https://www.baidu.com)
 
 
 以下是图片的显示效果
 
-![](assets/favicon.png)
+![大图片](5k.heic)
 
 以上就是全部的显示效果了,以上就是全部的显示效果了,以上就是全部的显示效果了.以上就是全部的显示效果了,以上就是全部的显示效果了,以上就是全部的显示效果了.
 
