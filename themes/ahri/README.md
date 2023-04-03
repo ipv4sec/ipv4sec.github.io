@@ -3,6 +3,12 @@
 
 ahri. copied from [https://tech-zh.netlify.app](https://tech-zh.netlify.app)
 
+## Preview
+
+<img src="static/home.png" style="width:50%" />
+<img src="static/article.png" style="width:50%" />
+
+
 ## Configuration
 
 ```json
