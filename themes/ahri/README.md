@@ -7,7 +7,7 @@ ahri. copied from [https://tech-zh.netlify.app](https://tech-zh.netlify.app)
 
 ```json
 {
-  "title": "YuYuai's Articles",
+  "title": "Azir's Articles",
   "theme": "ahri",
   "disableKinds": [
     "taxonomy",

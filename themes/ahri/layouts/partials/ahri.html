@@ -19,14 +19,30 @@
         <div class="page-header-text"> Azir's Articles - Theme based on ahri. </div>
     </header>
 </a>
-
 <section class="page">
+
+{{ if .IsHome }}
+    <h1>所有文章:</h1>
+    <section class="articles">
+        <nav>
+            <ol class="list-of-pages">
+                {{  range .Pages }}
+                <li><a href="{{.Permalink}}">[{{.Date.Format "2006/01/02" }}] {{.Title}}</a></li>
+                {{  end  }}
+            </ol>
+        </nav>
+    </section>
+{{end}}
+
+{{ if .IsPage }}
     <h1>{{.Title}}</h1>
     <section class="content">
         <div>
             {{.Content}}
         </div>
     </section>
+{{end}}
+
 </section>
 
 </body>

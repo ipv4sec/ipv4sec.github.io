@@ -7,7 +7,7 @@ elise. forked from [https://github.com/yous/whiteglass](https://github.com/yous/
 
 ```json
 {
-  "title": "YuYuai's Articles",
+  "title": "Azir's Articles",
   "theme": "elise",
   "disableKinds": [
     "taxonomy",
