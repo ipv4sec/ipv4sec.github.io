@@ -12,17 +12,5 @@
   "uglyurls": true,
   "permalinks": {
     "/": "/:filename"
-  },
-  "menu": {
-	  "elise": [
-		  {
-			  "name": "Github",
-			  "url": "https://github.com/ipv4sec"
-		  },
-		  {
-			  "name": "Email",
-			  "url": "mailto:ipv4sec[AT]gmail[DOT]com"
-		  }
-	  ]
   }
 }
