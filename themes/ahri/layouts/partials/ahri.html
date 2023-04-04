@@ -6,7 +6,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>{{ .Site.Title }} {{ if .IsPage }} - {{.Title}} {{end}}</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.png">
-    <meta name="description" content="TODO">
+    <meta name="description" content="{{ .Site.Title }}">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="preload" href="assets/quicksand-v30-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="assets/bitter-v32-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
@@ -16,7 +16,7 @@
 <body>
 <a href="/">
     <header class="page-header">
-        <div class="page-header-text"> Azir's Articles - Theme based on ahri. </div>
+        <div class="page-header-text"> {{ .Site.Title }} - Theme based on ahri. </div>
     </header>
 </a>
 <section class="page">
