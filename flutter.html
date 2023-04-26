@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>愿  - Flutter之路 </title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <meta name="description" content="愿">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preload" href="assets/quicksand-v30-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/bitter-v32-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="assets/ahri.css">
+</head>
+
+<body>
+<a href="/">
+    <header class="page-header">
+        <div class="page-header-text"> 愿 - Theme based on ahri. </div>
+    </header>
+</a>
+<section class="page">
+
+
+
+
+    <h1>Flutter之路</h1>
+    <section class="content">
+        <div>
+            <h3 id="安卓平台图片加载顺序">安卓平台图片加载顺序</h3>
+<ol>
+<li><code>/android/app/src/main/res/</code>路径下, 如果手机版本为<code>7.0</code>, 则优先<code>drawable-v24</code>路径下查找, 其次<code>drawable-v21</code>, 再<code>drawable</code></li>
+<li>优先当前手机分辨率<code>xxhdpi</code>,先查找当前<code>drawable-xxhdpi</code>, 再更高<code>drawable-xxxhdpi</code>, 再无<code>drawable-nodpi</code>, 再更低<code>drawable-xhdpi</code>,<code>drawable-hdpi</code>,<code>drawable-mdpi</code>,<code>drawable-ldpi</code></li>
+</ol>
+<h3 id="安卓平台打包之路">安卓平台打包之路</h3>
+<p>待整理</p>
+<h3 id="视窗平台打包之路">视窗平台打包之路</h3>
+<ol>
+<li>构建<code>flutter build windows</code></li>
+<li>产出<code>&lt;project&gt;/..build/windows/runner/release/</code></li>
+<li>下载<a href="https://jrsoftware.org/isdl.php">Inno Setup</a></li>
+<li>打包教程 <a href="https://web.archive.org/web/20221128124401/https://protocoderspoint.com/how-to-create-exe-installation-file-of-flutter-windows-application/">链接</a></li>
+</ol>
+<h3 id="常用的依赖库">常用的依赖库</h3>
+<ol>
+<li><a href="https://pub.flutter-io.cn/packages/flutter_launcher_icons"></a></li>
+<li><a href="https://pub.flutter-io.cn/packages/flutter_launcher_name"></a></li>
+<li><a href="https://pub.dev/packages/easy_permission"></a></li>
+<li><a href="https://pub.dev/packages/permission_handler"></a></li>
+</ol>
+<h3 id="常见操作">常见操作</h3>
+<ol>
+<li><a href="https://flutter.cn/docs/development/ui/advanced/splash-screen">向应用添加启动页</a></li>
+</ol>
+
+        </div>
+    </section>
+
+
+</section>
+
+</body>
+</html>

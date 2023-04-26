@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>愿  - 开发Hugo主题笔记 </title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <meta name="description" content="愿">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preload" href="assets/quicksand-v30-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/bitter-v32-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="assets/ahri.css">
+</head>
+
+<body>
+<a href="/">
+    <header class="page-header">
+        <div class="page-header-text"> 愿 - Theme based on ahri. </div>
+    </header>
+</a>
+<section class="page">
+
+
+
+
+    <h1>开发Hugo主题笔记</h1>
+    <section class="content">
+        <div>
+            <p>Hugo博客<code>config.json</code>配置</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;title&#34;</span>: <span style="color:#e6db74">&#34;愿&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;theme&#34;</span>: <span style="color:#e6db74">&#34;ahri&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;disableKinds&#34;</span>: [
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;taxonomy&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;term&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;sitemap&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;section&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;RSS&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;404&#34;</span>
+</span></span><span style="display:flex;"><span>  ],
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;uglyurls&#34;</span>: <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;permalinks&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;/&#34;</span>: <span style="color:#e6db74">&#34;/:filename&#34;</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>先执行 <code>hugo new theme ahri</code></p>
+<pre tabindex="0"><code>├─layouts
+│  ├─partials
+│  └─_default
+└─static
+</code></pre><ol>
+<li><code>partials/ahri.html</code>组件</li>
+<li><code>_default/index.html</code>首页, <code>_default/single.html</code>单页, 内容<code>{{ partial &quot;ahri.html&quot; . }}</code></li>
+<li><code>theme.toml</code></li>
+</ol>
+<pre tabindex="0"><code>name = &#34;ahri&#34;
+min_version = &#34;0.41.0&#34;
+description = &#34;ahri theme description&#34;
+</code></pre><ol>
+<li><code>&lt;title&gt;{{ .Site.Title }} {{ if .IsPage }} - {{.Title}} {{end}}&lt;/title&gt;</code></li>
+<li><code>&lt;link rel=&quot;preload&quot; href=&quot;assets/quicksand-v30-latin-regular.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</code></li>
+</ol>
+<pre tabindex="0"><code>{{ if .IsHome }}
+    &lt;h1&gt;所有文章:&lt;/h1&gt;
+    &lt;section class=&#34;articles&#34;&gt;
+        &lt;nav&gt;
+            &lt;ol class=&#34;list-of-pages&#34;&gt;
+                {{  range .Pages }}
+                &lt;li&gt;&lt;a href=&#34;{{.Permalink}}&#34;&gt;[{{.Date.Format &#34;2006/01/02&#34; }}] {{.Title}}&lt;/a&gt;&lt;/li&gt;
+                {{  end  }}
+            &lt;/ol&gt;
+        &lt;/nav&gt;
+    &lt;/section&gt;
+{{end}}
+</code></pre><pre tabindex="0"><code>{{ if .IsPage }}
+    &lt;h1&gt;{{.Title}}&lt;/h1&gt;
+    &lt;section class=&#34;content&#34;&gt;
+        &lt;div&gt;
+            {{.Content}}
+        &lt;/div&gt;
+    &lt;/section&gt;
+{{end}}
+</code></pre>
+        </div>
+    </section>
+
+
+</section>
+
+</body>
+</html>
