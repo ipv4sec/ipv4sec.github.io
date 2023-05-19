@@ -39,7 +39,7 @@ func Init(dsn string) (err error) {
 
 ~~删除文本~~
 
-这是行内式链接：[Azir's Articles](https://example.com/)
+这是行内式链接：[Example's Articles](https://example.com/)
 
 这是行内代码`onCreate(Bundle savedInstanceState)`的例子。
 

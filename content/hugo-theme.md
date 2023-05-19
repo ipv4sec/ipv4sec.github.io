@@ -1,7 +1,7 @@
 ---
 title: "开发Hugo主题笔记"
 date: 2023-04-26T23:04:02+08:00
-draft: false
+draft: true
 ---
 
 Hugo博客`config.json`配置
